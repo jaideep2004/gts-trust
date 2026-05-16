@@ -1,0 +1,62 @@
+:root {
+  --ink: #24135d;
+  --ink-2: #432489;
+  --saffron: #f18722;
+  --saffron-2: #ffb14d;
+  --cream: #fffaf2;
+  --cream-2: #f8efe2;
+  --paper: #ffffff;
+  --muted: #716b79;
+  --line: rgba(36, 19, 93, 0.12);
+  --shadow: 0 24px 70px rgba(50, 36, 91, 0.14);
+  --soft-shadow: 0 15px 45px rgba(75, 47, 113, 0.1);
+  --radius: 8px;
+  --heading: Georgia, 'Times New Roman', serif;
+  --body: 'Trebuchet MS', 'Segoe UI', sans-serif;
+
+  font-family: var(--body);
+  color: var(--muted);
+  background: var(--cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 15% 2%, rgba(241, 135, 34, 0.08), transparent 32%),
+    linear-gradient(180deg, #fffdf8 0%, var(--cream) 55%, #fff 100%);
+}
+
+button,
+a {
+  font: inherit;
+}
+
+button {
+  border: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100svh;
+}

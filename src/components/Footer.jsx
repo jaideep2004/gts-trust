@@ -1,5 +1,4 @@
 import ContactLine from "./ContactLine";
-import Icon from "./Icon";
 import { contact, initiatives } from "../data/siteData";
 
 function Footer({ navigate, navigateToAnchor }) {

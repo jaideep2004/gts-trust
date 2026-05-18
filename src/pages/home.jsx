@@ -2,7 +2,13 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import ContactLine from "../components/ContactLine";
 import Icon from "../components/Icon";
 import SectionTitle from "../components/SectionTitle";
-import { activities, contact, initiatives, reels, stats } from "../data/siteData";
+import {
+	activities,
+	contact,
+	initiatives,
+	reels,
+	stats,
+} from "../data/siteData";
 
 function Home({ navigate, navigateToAnchor }) {
 	return (
@@ -84,10 +90,15 @@ function Hero({ navigate, navigateToAnchor }) {
 					</div>
 					<div className='mini-impact'>
 						<div className='mini-faces' aria-hidden='true'>
+							{/* <span />
 							<span />
 							<span />
-							<span />
-							<span />
+							<span /> */}
+							<img
+								src='/images/hero-tests.png'
+								alt=''
+								style={{ width: "110px" }}
+							/>
 						</div>
 						<p>Thousands of lives touched through seva and support</p>
 						<Icon name='heartFill' />
@@ -295,13 +306,18 @@ function ActivitiesSlider() {
 function ReelsSlider() {
 	const [index, setIndex] = useState(0);
 	const prefersReducedMotion = useMemo(
-		() => typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+		() =>
+			typeof window !== "undefined" &&
+			window.matchMedia("(prefers-reduced-motion: reduce)").matches,
 		[],
 	);
 
 	useEffect(() => {
 		if (prefersReducedMotion) return undefined;
-		const interval = window.setInterval(() => setIndex((value) => (value + 1) % reels.length), 4200);
+		const interval = window.setInterval(
+			() => setIndex((value) => (value + 1) % reels.length),
+			4200,
+		);
 		return () => window.clearInterval(interval);
 	}, [prefersReducedMotion]);
 
@@ -314,12 +330,23 @@ function ReelsSlider() {
 					<p className='section-eyebrow'>Latest Reels</p>
 					<h2>Seva in Motion</h2>
 					<span className='title-rule' aria-hidden='true' />
-					<p>Short glimpses from trust activities, community support, and everyday moments of compassion.</p>
+					<p>
+						Short glimpses from trust activities, community support, and
+						everyday moments of compassion.
+					</p>
 					<div className='slider-controls' aria-label='Reels controls'>
-						<button type='button' aria-label='Previous reel' onClick={() => setIndex((index - 1 + reels.length) % reels.length)}>
+						<button
+							type='button'
+							aria-label='Previous reel'
+							onClick={() =>
+								setIndex((index - 1 + reels.length) % reels.length)
+							}>
 							<Icon name='chevronLeft' />
 						</button>
-						<button type='button' aria-label='Next reel' onClick={() => setIndex((index + 1) % reels.length)}>
+						<button
+							type='button'
+							aria-label='Next reel'
+							onClick={() => setIndex((index + 1) % reels.length)}>
 							<Icon name='chevronRight' />
 						</button>
 					</div>

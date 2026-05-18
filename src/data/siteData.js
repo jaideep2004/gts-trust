@@ -9,7 +9,7 @@ export const navItems = [
 	{ label: "Home", to: "/" },
 	{ label: "About Us", to: "/about" },
 	{ label: "Initiatives", anchor: "initiatives" },
-	{ label: "Gallery", anchor: "activities" },
+	{ label: "Donate", to: "/donate" },
 	{ label: "Contact Us", to: "/contact" },
 ];
 

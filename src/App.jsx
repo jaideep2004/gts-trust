@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Disclaimer from "./pages/disclaimer";
+import Donate from "./pages/donate";
 import Home from "./pages/home";
 import Privacy from "./pages/privacy";
 import Terms from "./pages/terms";
@@ -13,6 +14,7 @@ const routes = {
 	"/": Home,
 	"/about": About,
 	"/contact": Contact,
+	"/donate": Donate,
 	"/terms-and-conditions": Terms,
 	"/privacy-policy": Privacy,
 	"/disclaimer": Disclaimer,

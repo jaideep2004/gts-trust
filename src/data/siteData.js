@@ -1,5 +1,5 @@
 export const contact = {
-	phones: ["+91 98555 01957", "+91 74480 00090"],
+	phones: ["+91 74480 00090", "+91 98555 01957"],
 	email: "gtstrust2026@gmail.com",
 	address: "2063/5, Lehal Colony, Patiala - 147001 (Punjab)",
 	upi: "74480000090@okbizaxis",

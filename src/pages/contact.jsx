@@ -63,8 +63,12 @@ const EMAILJS_CONFIG = {
 };
 
 const contactHighlights = [
-	{ icon: "clock", label: "Every day", text: "8:00 AM - 8:00 PM" },
-	{ icon: "pin", label: "Visit us", text: "Lehal Colony, Patiala" },
+	// { icon: "clock", label: "Every day", text: "8:00 AM - 8:00 PM" },
+	{
+		icon: "pin",
+		label: "Visit us",
+		text: "2063/5, Lehal Colony, Patiala - 147001 (Punjab)",
+	},
 ];
 
 function Contact({ navigateToAnchor }) {
